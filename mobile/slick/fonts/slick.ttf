@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AE888</title>
+    <meta name="keywords" content="APP Download">
+    <meta name="description" content="APP Download">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="AE888"/>
+    <link rel="stylesheet" type="text/css" href="../ae888/mobile/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../ae888/mobile/slick/slick-theme.css" />
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100vw;
+        min-height: 100vh;
+        background: url(../ae888/mobile/img/bg.jpg) center/cover no-repeat fixed;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 750px;
+        position: relative;
+        margin: auto;
+    }
+
+    .logo {
+        height: 50px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        display: block;
+        height: 60%;
+        width: auto;
+        margin: auto;
+    }
+
+    .slide {
+        max-width: 450px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+    }
+
+    .slide>div img {
+        display: block;
+        width: calc(100% - 80px);
+        margin: auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 0;
+    }
+
+    .slick-prev {
+        left: 0px;
+        background: url(../ae888/mobile/img/icon-left.png) center/auto 100% no-repeat !important;
+    }
+
+    .slick-next {
+        right: 0px;
+        background: url(../ae888/mobile/img/icon-right.png) center/auto 100% no-repeat !important;
+    }
+
+    .info {
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        margin: -30px auto 0px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .info.guide {
+        margin: 20px auto 0px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 10px 0 2px;
+        color: #d2b496;
+    }
+    .info h4 {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0 2px;
+        color: #d2b496;
+    }
+
+    .download-app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        text-align: center;
+        border-radius: 100px;
+        margin: 10px auto;
+        background: linear-gradient(to right, #dccab8 0%, #d2b496 100%);
+        box-shadow: 0 5px 10px 0 rgba(65, 70, 85, 0.15);
+        text-decoration: none;
+    }
+
+    .download-app svg {
+        margin: 0 5px 0 0;
+    }
+
+    .download-app path {
+        fill: #fff;
+    }
+
+    .download-btn {
+        position: relative;
+        z-index: 10;
+        display: flex;
+    }
+    .guide-step {
+        width: 85%;
+        position: relative;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .guide-step img {
+        width: 48%;
+        border-radius: 3px;
+        margin: 10px 0;
+        box-shadow: 0 1px 5px rgba(65, 70, 85, 0.2);
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <img src="../ae888/mobile/img/logo.png" />
+        </div>
+        <div class="slide">
+            <div><img src="../ae888/mobile/img/loading/content_01.png" /></div>
+            <div><img src="../ae888/mobile/img/loading/content_02.png" /></div>
+            <div><img src="../ae888/mobile/img/loading/content_03.png" /></div>
+            <div><img src="../ae888/mobile/img/loading/content_04.png" /></div>
+            <div><img src="../ae888/mobile/img/loading/content_05.png" /></div>
+        </div>
+
+        <div class="info">
+            Vui lòng sử dụng trình duyệt điện thoại để mở trang này. Để đảm bảo tốc độ mượt và nhanh, vui lòng tải, cài đặt và ký tên trong cùng một đường mạng.
+        </div>
+
+        <div class="download-btn">
+            <a onclick="openDetectAgentWithFileNamePlatform('ios', 'manifestYabo.plist')" class="download-app">
+          <svg width="20" height="24">
+            <path
+              d="M22,17.61c-.79,2.28-3.14,6.31-5.56,6.36-1.61,0-2.13-.95-4-.95s-2.41.92-3.93,1C6,24.1,2,18.17,2,13,2,8.26,5.31,5.9,8.2,5.86c1.55,0,3,1,4,1s2.72-1.29,4.59-1.11a5.65,5.65,0,0,1,4.39,2.38C17.4,10.62,18,15.73,22,17.61ZM16.78,0A5.31,5.31,0,0,0,12,5.53C14.58,5.73,17.09,2.81,16.78,0Z"
+              transform="translate(-2)"
+            />
+          </svg>
+          Download
+        </a>
+
+            <a onclick="openDetectAgentWithFileNamePlatform('android','v02.apk')" class="download-app">
+          <svg width="20" height="24">
+            <path
+              d="M6,8v9.44A1.56,1.56,0,0,0,7.56,19H8v3.54A1.51,1.51,0,0,0,9.51,24,1.48,1.48,0,0,0,11,22.54V19h2v3.54A1.51,1.51,0,0,0,14.51,24,1.48,1.48,0,0,0,16,22.54V19h.44A1.56,1.56,0,0,0,18,17.44V8ZM22,9.47a1.5,1.5,0,0,0-3,0v6.11a1.5,1.5,0,0,0,3,0Zm-17,0a1.5,1.5,0,0,0-3,0v6.11A1.46,1.46,0,0,0,3.5,17,1.46,1.46,0,0,0,5,15.58ZM15,2.16,15.89.3a.2.2,0,0,0-.16-.3.21.21,0,0,0-.17.1L14.61,2A6.18,6.18,0,0,0,9.39,2L8.44.1A.21.21,0,0,0,8.27,0a.2.2,0,0,0-.16.3l.94,1.86A5.33,5.33,0,0,0,6,7H18A5.33,5.33,0,0,0,15,2.16ZM9.5,5A.5.5,0,0,1,9,4.5.51.51,0,0,1,9.5,4a.5.5,0,0,1,.5.5A.5.5,0,0,1,9.5,5Zm5,0a.5.5,0,0,1-.5-.5.5.5,0,0,1,1,0A.5.5,0,0,1,14.5,5Z"
+              transform="translate(-2 0)"
+            />
+          </svg>
+          Download
+        </a>
+        </div>
+
+        <div class="info guide">
+            <h4>Lướt để xem cách thức cài đặt</h4>
+            <img src="../ae888/mobile/img/jiantou.png" alt="">
+            <div class="ios-icon">
+                <svg width="20" height="24">
+                    <path
+                      d="M22,17.61c-.79,2.28-3.14,6.31-5.56,6.36-1.61,0-2.13-.95-4-.95s-2.41.92-3.93,1C6,24.1,2,18.17,2,13,2,8.26,5.31,5.9,8.2,5.86c1.55,0,3,1,4,1s2.72-1.29,4.59-1.11a5.65,5.65,0,0,1,4.39,2.38C17.4,10.62,18,15.73,22,17.61ZM16.78,0A5.31,5.31,0,0,0,12,5.53C14.58,5.73,17.09,2.81,16.78,0Z"
+                      transform="translate(-2)"
+                    />
+                </svg>
+            </div>
+            <h1>Các ứng dụng doanh nghiệp iOS thêm sự tin tưởng</h1>
+            Sau khi cài đặt AE888, nhấp vào Tin cậy hoặc thực hiện cách cài đặt sau để sử dụng ứng dụng
+            
+            <div class="guide-step">
+                <img src="../ae888/mobile/img/t2.jpg" alt="">
+                <img src="../ae888/mobile/img/t3.jpg" alt="">
+                <img src="../ae888/mobile/img/t4.jpg" alt="">
+                <img src="../ae888/mobile/img/t5.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../ae888/mobile/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        function openDetectAgentAndHref(url) {
+            var searchParams = new URLSearchParams(window.location.search);
+            var agentId = searchParams.get('agt');
+            var ulagentId = searchParams.get('uagt');
+
+            try {
+                var copyText = 'uagt=';
+                if (ulagentId) {
+                    console.log('active uagent');
+                    copyText = 'uagt=' + ulagentId;
+                    clipboard(copyText, url);
+                } else if (agentId) {
+                    console.log('active agent');
+                    copyText = 'agt=' + agentId;
+                    clipboard(copyText, url);
+                } else {
+                    window.location.href = url;
+                    console.log('not need copy');
+                }
+            } catch (err) {
+                window.location.href = url;
+                console.log(err);
+            }
+
+            function clipboard(copyText, url) {
+                navigator.clipboard.writeText(copyText).then(
+                    function() {
+                        window.location.href = url;
+                        console.log('Copying to clipboard was successful!');
+                    },
+                    function(err) {
+                        window.location.href = url;
+                        console.error('Could not copy text: ', err);
+                    }
+                );
+            }
+        }
+
+        function openDetectAgentWithFileNamePlatform(platform, fileName) {
+            var searchParams = new URLSearchParams(window.location.search);
+            var agentId = searchParams.get('agt');
+            var ulagentId = searchParams.get('uagt');
+
+            try {
+                var copyText = 'uagt=';
+                if (ulagentId) {
+                    console.log('active uagent');
+                    copyText = 'uagt=' + ulagentId;
+                    copyToClipboard(copyText);
+                } else if (agentId) {
+                    console.log('active agent');
+                    copyText = 'agt=' + agentId;
+                    copyToClipboard(copyText);
+                } else {
+                    console.log('not need copy');
+                }
+                if (platform == 'ios') {
+                    window.location.href =
+                        'itms-services://?action=download-manifest&url=' +
+                        window.location.protocol +
+                        '//' +
+                        window.location.hostname +
+                        window.location.pathname +
+                        fileName;
+                } else {
+                    window.location.href =
+                        window.location.protocol +
+                        '//' +
+                        window.location.hostname +
+                        '/release/' +
+                        fileName;
+                }
+            } catch (err) {
+                window.location.href = url;
+                console.log(err);
+            }
+        }
+
+        function copyToClipboard(string) {
+            let textarea;
+            let result;
+
+            try {
+                textarea = document.createElement('textarea');
+                textarea.setAttribute('readonly', true);
+                textarea.setAttribute('contenteditable', true);
+                textarea.style.position = 'fixed'; // prevent scroll from jumping to the bottom when focus is set.
+                textarea.value = string;
+
+                document.body.appendChild(textarea);
+
+                textarea.focus();
+                textarea.select();
+
+                const range = document.createRange();
+                range.selectNodeContents(textarea);
+
+                const sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+
+                textarea.setSelectionRange(0, textarea.value.length);
+                result = document.execCommand('copy');
+            } catch (err) {
+                console.error(err);
+                result = null;
+            } finally {
+                document.body.removeChild(textarea);
+            }
+
+            // manual copy fallback using prompt
+            if (!result) {
+                const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+                const copyHotkey = isMac ? '⌘C' : 'CTRL+C';
+                result = prompt(`Press ${copyHotkey}`, string); // eslint-disable-line no-alert
+                if (!result) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        $(document).ready(function() {
+            $('.slide').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
